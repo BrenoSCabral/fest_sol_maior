@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p> Dirtor: <%= @short.director.name%> </p>
+<p> Compositor: <%= @short.composer.name %> </p>
+<p> Lançado em: <%= @short.launch.strftime("%d/%m/%Y") %></p>
+
+<br>
+<%= link_to 'Back', shorts_path %>
