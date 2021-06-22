@@ -11,6 +11,22 @@
   </head>
 
   <body>
+  <div class="cover">
+    <h1>FESTIVAL DE CINEMA SOL MAIOR</h1>
+    <div class="logo">
+      <%= link_to  root_path do %>
+        <%= image_tag("logo.svg", :alt => "logo do festival") %>
+      <% end %> 
+    </div>
+    <div class="data-fest">
+      <h2>1-5</h2>
+      <h3>DE SETEMBRO</h3>
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-light" style="margin: auto;width: 70%;margin-top: -50px;height:60px">
+    <%# <a class="navbar-brand" href="#">Navbar</a> %>
+  </nav>
+
     <%= yield %>
   </body>
 </html>
