@@ -1,29 +1,16 @@
 <div class="cabecalho-lista">
   <div class="container">
     <h2>LISTA GERAL</h2>
+
+    <div class="curtas" style="margin-top:30px;">
+      <% @shorts.each do |short| %>
+        <div class="col-lg-4">
+          <%#= main_app.url_for(short.thumbnail) %>
+          <%= image_tag(short.thumbnail) %>
+          <%= link_to (short.name + " - " + short.launch.strftime("%Y")), short %>
+        </div>
+      <% end %>
+    </div>
+
   </div>
 </div>
-
- 
-  
-  <h1>Festival Sol Maior!</h1>
-  <h3>Curtas</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @shorts.each do |short| %>
-        <tr>
-          <td><%= link_to (short.name + " - " + short.launch.strftime("%Y")), short %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-
-  <br>
-

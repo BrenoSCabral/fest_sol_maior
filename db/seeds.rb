@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'date'
 
+
 director1 = Director.new()
 director1.name = "Diretor"
 director1.bio = "Oi eu sou o diretor"
@@ -22,10 +23,9 @@ curta1.launch = Date.today()
 curta1.datasheet = "Eu sou um curta!"
 curta1.director = director1
 curta1.composer = composer1
+
+
 curta1.save
 
-# user = User.new()
-# user.email = "user@email.com"
-# user.password = '123456'
-# user.admin = false
-# user.save
+# salvou o curta
+curta1.thumbnail.attach(io:File.open(Rails.root + "app/assets/images/batata.png"), filename: 'batata.png')

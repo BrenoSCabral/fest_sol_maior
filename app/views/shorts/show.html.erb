@@ -5,6 +5,8 @@
 <p> Compositor: <%= @short.composer.name %> </p>
 <p> Lançado em: <%= @short.launch.strftime("%d/%m/%Y") %></p>
 <p> Ficha Técnica: <%= @short.datasheet %></p>
+
+<%= #url_for(@short.thumbnail) %>
 <br>
 
 <%= link_to 'Back', shorts_path %>
