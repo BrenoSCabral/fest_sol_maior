@@ -1,4 +1,6 @@
 @import "bootstrap/scss/bootstrap";
+@import "bootstrap-sprockets";
+//@import "bootstrap";
 @font-face {
   font-family: 'League Spartan';
   src: url('fonts/leaguespartan-bold.eot');
@@ -9,10 +11,16 @@
        url('fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
   font-weight: bold;
   font-style: normal;
-
 }
 //@import "pages/shorts.scss";
 
+nav a{
+  color: black;
+}
+
+.nav-link{
+  color:black
+}
 
 body{
   background-color: #FFF0A6;
@@ -85,5 +93,10 @@ body{
   margin-top: 20px;
   width: 100%;
   background-color: white;
-  height: 50px;
+  height: 70px;
+  font-size: 30px;
+}
+
+.cabecalho-lista h2{
+  padding-top: 20px;
 }
