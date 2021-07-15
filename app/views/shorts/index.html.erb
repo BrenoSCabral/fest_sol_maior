@@ -6,7 +6,7 @@
       <% @shorts.each do |short| %>
         <div class="col-lg-4">
           <%#= main_app.url_for(short.thumbnail) %>
-          <%= image_tag(main_app.url_for(short.thumbnail)) %>
+          <%#= image_tag(main_app.url_for(short.thumbnail)) %>
           <%#= image_tag(short.thumbnail) %>
           <%= link_to (short.name + " - " + short.launch.strftime("%Y")), short %>
         </div>

@@ -100,3 +100,31 @@ body{
 .cabecalho-lista h2{
   padding-top: 20px;
 }
+
+// PAGINA DA EQUIPE:
+.card{
+  border-radius: 15px;
+  background-color: #F25A22;
+  height: 350px;
+  width: 250px;
+}
+
+.card h5 {
+  opacity: 70%;
+}
+
+.center-block {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  text-align: center;
+}
+
+.avatar{
+  margin-top: 20px;
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  background-color: white;  
+  margin-bottom: 30px;
+}

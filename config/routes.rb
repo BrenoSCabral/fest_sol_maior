@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   #get '/shorts' to: 'shorts#index'
   # resources :shorts, except: [:new, :create, :edit, :update, :destroy]
   get "pages", to: "pages#index"
+  get "team", to: "pages#team"
+  get "presentation", to: "pages#presentation"
   get "shorts", to: "shorts#index"
   get "shorts/:id", to: "shorts#show", as: :short
   #resolve("ActiveStorage::Variant") { |variant, options| main_app.route_for(:rails_variant, variant, options) }

@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2021_06_28_020235) do
   create_table "curta", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    # criar mostra aqui como int, mas pra isso precisa saber o numero de mostras
   end
 
   create_table "directors", force: :cascade do |t|
