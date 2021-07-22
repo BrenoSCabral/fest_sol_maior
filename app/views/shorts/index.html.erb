@@ -8,6 +8,9 @@
           <%#= main_app.url_for(short.thumbnail) %>
           <%#= image_tag(main_app.url_for(short.thumbnail)) %>
           <%#= image_tag(short.thumbnail) %>
+          <%# image_path(main_app.url_for(short.thumbnail)) %>
+          
+
           <%= link_to (short.name + " - " + short.launch.strftime("%Y")), short %>
         </div>
       <% end %>

@@ -29,6 +29,3 @@ curta1.save
 
 # salvou o curta
 curta1.thumbnail.attach(io:File.open(Rails.root + "app/assets/images/batata.png"), filename: 'batata.png')
-
-
-puts curta1.thumbnail.attached?
