@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :videos
   root to: 'pages#index'
   #get '/shorts' to: 'shorts#index'
   # resources :shorts, except: [:new, :create, :edit, :update, :destroy]
